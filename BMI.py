@@ -18,6 +18,9 @@ def bmi_calc(w,h):
 
 st.title("BMI Calculator")
 st.subheader("health is wealth,Calculate your BMI today")
+
+img = Image.open("imageb.jpg")
+st.image(img)
          
-weight = st.number_input("Enter your weight in kg", step=1)
+weight = st.number_input("Enter your weight in kg", step=0.1)
 height = st.number_input("Enter your height in metres", step=1)       
