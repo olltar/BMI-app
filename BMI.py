@@ -26,6 +26,9 @@ st.image(img)
 weight = st.number_input("Enter your weight in kg", step=0.1)
 height = st.number_input("Enter your height in metres", step=1)      
 
-if st.number_input("Calculate BMI"):
-    z = x/(y**2)
+st.sidebar.image("heart.jpg")
+st.sidebar.write("Your Body Mass Index indicates the impact of your body weight on your wellbeing, check it today")
+
+if st.button("Calculate"):
+    st.success(bmi_calc(weight,height))
     
