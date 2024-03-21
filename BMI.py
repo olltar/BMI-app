@@ -15,6 +15,7 @@ def bmi_calc(w,h):
         return f"Your BMI is {bmi}, you are within the healthy range."
     else:
         return f"Your BMI is {bmi}, you are at risk of underweight."
+    
 
 st.title("BMI Calculator")
 st.subheader("health is wealth,Calculate your BMI today")
@@ -23,4 +24,8 @@ img = Image.open("imageb.jpg")
 st.image(img)
          
 weight = st.number_input("Enter your weight in kg", step=0.1)
-height = st.number_input("Enter your height in metres", step=1)       
+height = st.number_input("Enter your height in metres", step=1)      
+
+if st.number_input("Calculate BMI"):
+    z = x/(y**2)
+    
